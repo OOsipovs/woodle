@@ -48,21 +48,41 @@
               </div>
           </div>
 
-          <div class="tabsContainer">
-            <ul class="tablist">
-                <li class="<?php echo $type == 'sites' ? 'active' : '' ?>">
-                  <a href='<?php echo "search.php?term=$term&type=sites"; ?>'>
-                    Sites
-                  </a>
-                </li>
-                <li class="<?php echo $type == 'images' ? 'active' : '' ?>">
-                  <a href='<?php echo "search.php?term=$term&type=images"; ?>'>
-                    Images
-                  </a>
-                </li>
 
-            </ul>
-          </div>
+    			<div class="tabsContainer">
+
+    				<ul class="tabList">
+
+    					<li class="<?php echo $type == 'sites' ? 'active' : '' ?>">
+    						<a href='<?php echo "search.php?term=$term&type=sites"; ?>'>
+    							Sites
+    						</a>
+    					</li>
+
+    					<li class="<?php echo $type == 'images' ? 'active' : '' ?>">
+    						<a href='<?php echo "search.php?term=$term&type=images"; ?>'>
+    							Images
+    						</a>
+    					</li>
+
+              <li class="<?php echo $type == 'videos' ? 'active' : '' ?>">
+                <a href='<?php echo "search.php?term=$term&type=videos"; ?>'>
+                  Videos
+                </a>
+              </li>
+
+              <li class="<?php echo $type == 'gifs' ? 'active' : '' ?>">
+                <a href='<?php echo "search.php?term=$term&type=gifs"; ?>'>
+                  Gifs
+                </a>
+              </li>
+
+
+
+    				</ul>
+
+
+    			</div>
 
       </div>
 
